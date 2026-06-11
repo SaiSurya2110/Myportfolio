@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Surya Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+html{scroll-behavior:smooth;}
+body{
+    background:#121212;
+    color:#f5f5f5;
+    font-family:"DM Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,.navbar-brand,.home-title,.home-role{
+    font-family:"Syne", sans-serif;
+}
+section{padding:90px 0;}
+.navbar{background:#000 !important;}
+.home-title{font-size:56px;font-weight:bold;}
+.home-role{color:#4ea1ff;}
+.home-text{color:#d6d6d6;font-size:18px;line-height:1.8;}
+.profile-img{
+    width:340px;height:340px;border-radius:50%;
+    object-fit:cover;border:4px solid #4ea1ff;
+    box-shadow:0 0 25px rgba(78,161,255,.3);
+    animation: floatImg 4s ease-in-out infinite;
+    transition: transform .4s ease, box-shadow .4s ease;
+    cursor: pointer;
+}
+.profile-img:hover{
+    transform: scale(1.06) rotate(2deg);
+    box-shadow: 0 0 55px rgba(78,161,255,.65);
+}
+@keyframes floatImg {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+.card-custom{
+    background:#1e1e1e;
+    border:1px solid #2d2d2d;
+    border-radius:15px;
+    padding:20px;
+    transition:.3s;
+}
+.about-info .card-custom{
+    padding:12px 16px;
+}
+.about-info .card-custom h4{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#4ea1ff;
+    margin-bottom:2px;
+}
+.about-info .card-custom p{
+    font-size:15px;
+    margin:0;
+}
+.card-custom:hover{
+    transform:translateY(-5px);
+    border-color:#4ea1ff;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">Sai Surya</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section id="home">
+<div class="container">
+<div class="row align-items-center min-vh-100">
+<div class="col-md-6">
+<h1 class="home-title">Hello, I am Sai Surya</h1>
+<h3 class="home-role">AI & Full Stack Developer</h3>
+<p class="home-text">
+Passionate about Artificial Intelligence, Machine Learning and Web Development.
+I enjoy building intelligent applications and solving real-world problems.
+</p>
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="#contact" class="btn btn-outline-light ms-2">Contact</a>
+<a href="https://github.com/SaiSurya2110" target="_blank" class="btn btn-outline-light ms-2">GitHub</a>
+<a href="https://drive.google.com/uc?export=download&id=1IFxc36IUFN9T543QHrnMXFf9WjlSbYho" target="_blank" class="btn btn-outline-primary ms-2">Download Resume</a>
+</div>
+
+<div class="col-md-6 text-center mt-5 mt-md-0">
+<img src="https://media.licdn.com/dms/image/v2/D5603AQGaGwcjjByerw/profile-displayphoto-crop_800_800/B56Zz3qhwZJ8AI-/0/1773681648179?e=1782950400&v=beta&t=o2-0dtN9VErIQiBHHZtR-vCMO-ZPoqTVmZ-YK3Wbr2g" class="profile-img img-fluid" alt="Sai Surya">
+</div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h1 class="section-title">About Me</h1>
+<div class="row">
+<div class="col-md-6">
+<p>
+Computer Science undergraduate (AI/ML) at SR University with hands-on experience
+building machine learning pipelines and reinforcement learning systems.
+</p>
+<p>
+Proficient in Python, Scikit-learn, Deep Learning and modern web technologies.
+Interested in building scalable AI-driven applications.
+</p>
+</div>
+
+<div class="col-md-6 about-info">
+<div class="card-custom mb-3">
+<h4>University</h4>
+<p>SR University, Warangal</p>
+</div>
+
+<div class="card-custom mb-3">
+<h4>Location</h4>
+<p>Warangal, Telangana, India</p>
+</div>
+
+<div class="card-custom">
+<h4>Email</h4>
+<p>saisuryamusthyala63@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h1 class="section-title">Skills</h1>
+
+<div class="row g-4">
+<div class="col-md-4"><div class="card-custom"><h4>Programming</h4><p>Python, Java, SQL</p></div></div>
+<div class="col-md-4"><div class="card-custom"><h4>Machine Learning</h4><p>ML, Deep Learning, Reinforcement Learning</p></div></div>
+<div class="col-md-4"><div class="card-custom"><h4>Libraries</h4><p>Pandas, NumPy, Scikit-learn, PyTorch, Streamlit</p></div></div>
+<div class="col-md-4"><div class="card-custom"><h4>Web</h4><p>HTML, CSS, MongoDB, REST APIs</p></div></div>
+<div class="col-md-4"><div class="card-custom"><h4>Core CS</h4><p>DSA, OOP, DBMS, OS, CN</p></div></div>
+<div class="col-md-4"><div class="card-custom"><h4>Tools</h4><p>Git, GitHub, VS Code, Jupyter</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h1 class="section-title">Projects</h1>
+
+<div class="row g-4">
+<div class="col-md-6">
+<div class="card-custom">
+<h4>AI Healthcare Management</h4>
+<p>AI-driven healthcare management system for streamlining patient data, diagnosis support, and clinical workflows.</p>
+<a href="https://github.com/SaiSurya2110/ai-healthcare-management" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View on GitHub</a>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card-custom">
+<h4>AI Playlist Generator using Deep Q-Learning</h4>
+<p>DQN-based recommendation system trained on Spotify data with Streamlit integration.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card-custom">
+<h4>Bike Rental Demand Prediction</h4>
+<p>End-to-end ML pipeline comparing regression models for rental forecasting.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card-custom">
+<h4>AI News Summarization Tool</h4>
+<p>Summarizes lengthy news articles into concise and meaningful insights.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<h1 class="section-title">Education</h1>
+<div class="card-custom">
+<h3>SR University</h3>
+<p>B.Tech – Computer Science Engineering (AI & ML)</p>
+<p>CGPA: 9.03 / 10</p>
+<p>2023 – 2027</p>
+</div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="container">
+<h1 class="section-title">Certifications</h1>
+<div class="row g-4">
+<div class="col-md-4"><div class="card-custom">Microsoft Azure AI Fundamentals</div></div>
+<div class="col-md-4"><div class="card-custom">AWS Academy Cloud Developing</div></div>
+<div class="col-md-4"><div class="card-custom">AWS Academy Cloud Security Builder</div></div>
+<div class="col-md-4"><div class="card-custom">Python Full Stack Developer - EduSkills</div></div>
+<div class="col-md-4"><div class="card-custom">Deep Learning for Developers - Infosys Springboard</div></div>
+<div class="col-md-4"><div class="card-custom">ISRO AI/ML for Geodata Analysis</div></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h1 class="section-title">Contact</h1>
+<div class="card-custom">
+<p>Email: saisuryamusthyala63@gmail.com</p>
+<p>Phone: +91 9494119281</p>
+<p>Location: Warangal, Telangana</p>
+<p>LinkedIn : <a href="https://www.linkedin.com/in/sai-surya-musthyala/" style="color: rgb(142, 175, 230)">Sai Surya Musthyala</a></p>
+</div>
+</div>
+</section>
+
+<div class="footer">
+© 2026 Sai Surya | Portfolio
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
